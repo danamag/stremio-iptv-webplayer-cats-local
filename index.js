@@ -5,7 +5,7 @@ const defaults = {
 	prefix: 'iptvwebplayer_',
 	origin: '',
 	endpoint: '',
-	icon: 'https://image.winudf.com/v2/image/Y29tLmlwdHZwbGF5ZXIuYW5kcm9pZF9pY29uXzE1MzkwNjQ0MjJfMDc1/icon.png?w=170&fakeurl=1&type=.png',
+	icon: 'http://www.mdcgate.com/apps/upload/images/iptv/icon_512.png',
 	categories: []
 }
 
@@ -218,7 +218,7 @@ module.exports = {
 				id: 'org.' + defaults.name.toLowerCase().replace(/[^a-z]+/g,''),
 				version: '1.0.0',
 				name: defaults.name,
-				description: 'Supports connecting to the IPTV Web Player supported by many IPTV Providers (Nitro, Beast, Twisted and many more) based on Login URL, Username and Password',
+				description: 'Connects to the Web Portal used by many IPTV Providers (Nitro, Beast, Twisted and many more)',
 				resources: ['stream', 'meta', 'catalog'],
 				types: ['tv'],
 				idPrefixes: [defaults.prefix],
