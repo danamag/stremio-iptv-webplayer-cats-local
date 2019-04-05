@@ -5,7 +5,7 @@ const defaults = {
 	prefix: 'iptvwebplayer_',
 	origin: '',
 	endpoint: '',
-	icon: 'http://www.mdcgate.com/apps/upload/images/iptv/icon_512.png',
+	icon: 'http://www.mdcgate.com/apps/upload/images/tvos_iptv/IPTV-tvOS-icon.jpg',
 	categories: []
 }
 
