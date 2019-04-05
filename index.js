@@ -218,7 +218,7 @@ module.exports = {
 				id: 'org.' + defaults.name.toLowerCase().replace(/[^a-z]+/g,''),
 				version: '1.0.0',
 				name: defaults.name,
-				description: 'Supports connecting to the IPTV Web Player supported by many IPTV Providers (Nitro, Beast, Twisted and many more) based on Log In URL, Username and Password',
+				description: 'Supports connecting to the IPTV Web Player supported by many IPTV Providers (Nitro, Beast, Twisted and many more) based on Login URL, Username and Password',
 				resources: ['stream', 'meta', 'catalog'],
 				types: ['tv'],
 				idPrefixes: [defaults.prefix],
