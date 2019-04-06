@@ -260,13 +260,9 @@ module.exports = {
 				if (!meta) reject(defaults.name + ' - Could not get meta')
 				else resolve({ meta })
 			} else if (args.resource == 'stream') {
-				const meta = findMeta(args.id)
-				if (!meta) reject(defaults.name + ' - Could not get meta for stream')
-				else {
-					const chanId = args.id.split('_')[2]
-					const url = 'http://' + persist.loginData.url + ':' + persist.loginData.port + '/live/' + config.username + '/' + config.password + '/' + chanId + '.m3u8'
-					resolve({ streams: [ { title: 'Stream', url } ] })
-				}
+				const chanId = args.id.split('_')[2]
+				const url = 'http://' + persist.loginData.url + ':' + persist.loginData.port + '/live/' + config.username + '/' + config.password + '/' + chanId + '.m3u8'
+				resolve({ streams: [ { title: 'Stream', url } ] })
 			}
 		})
 	}
