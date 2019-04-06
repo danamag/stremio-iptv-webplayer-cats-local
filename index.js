@@ -1,8 +1,8 @@
 const modules = require('./modules')
 
 const defaults = {
-	name: 'IPTV Web Player',
-	prefix: 'iptvwebplayer_',
+	name: 'IPTV Web Player - Catalogs',
+	prefix: 'iptvwebplayercat_',
 	origin: '',
 	endpoint: '',
 	icon: 'http://www.mdcgate.com/apps/upload/images/tvos_iptv/IPTV-tvOS-icon.jpg',
@@ -218,7 +218,7 @@ module.exports = {
 				id: 'org.' + defaults.name.toLowerCase().replace(/[^a-z]+/g,''),
 				version: '1.0.0',
 				name: defaults.name,
-				description: 'Connects to the Web Portal used by many IPTV Providers (Nitro, Beast, Twisted and many more)',
+				description: 'Creates catalogs based on IPTV Web Portals. Connects to the Web Portal used by many IPTV Providers (Nitro, Beast, Twisted and many more)',
 				resources: ['stream', 'meta', 'catalog'],
 				types: ['tv'],
 				idPrefixes: [defaults.prefix],
