@@ -151,6 +151,8 @@ function findMeta(id) {
 }
 
 function getCatalog(local, reqId, cb) {
+	const config = local.config
+	setEndpoint(config.host)
 	const id = reqId.replace(defaults.prefix + 'cat_', '')
 	if (channels[id] && channels[id].length)
 		cb(channels[id])
